@@ -16,19 +16,19 @@
 <body>
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-        <div class="container-fluid">
+        <div class="container container1">
             <!-- <a class="navbar-brand" href="#">Gautam</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse navigation" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item px-4">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item px-4 hover-zoom">
+                    <li class="nav-item px-4">
                         <a class="nav-link" href="#about-section">About</a>
                     </li>
                     <li class="nav-item px-4">
@@ -44,19 +44,19 @@
             </div>
         </div>
     </nav>
-    <!-- home content -->   
+    <!-- home content -->
     <div class="container pb-5 mb-3 mt-5">
-        <div class="row ">
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center col-left">
                 <div class="bg-warning" style="border-radius: 50%;">
                     <img src="./image/coco leaves 3.png" alt="" class="img-fluid"
                         style="filter: drop-shadow((50px 4px 10px rgba(255, 238, 2, 0.1))); border-radius: 50%;">
                 </div>
             </div>
-            <div class="col-lg-8 col-sm-12 px-3 mt-3">
+            <div class="col-lg-8 col-sm-12 px-3 mt-3 col-right">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="display-4 text-warning fw-bolder text-underline">I'M GAUTAM SAHANI.</p>
+                        <p class="display-4 text-warning fw-bolder text-underline typing" id="typing-effect"></p>
                     </div>
                     <div class="col-lg-12">
                         <h4 class="fs-2 text-light">FRONTEND DEVELOPER</h4>
@@ -78,6 +78,8 @@
             </div>
         </div>
     </div>
+    
+
     <hr>
     <!-- about me container -->
     <h1 class="about-title text-center text-white fs-1 mb-5">About <span class="text-warning fs-1">Me</span></h1>
@@ -126,93 +128,94 @@
     <!-- my skills container -->
     <h1 class="about-title text-center text-white fs-1 mt-3"><span class="text-warning fs-1">My</span> Skills</h1>
     <!-- practice for skillset progress bar -->
-    <div class="container" id="mySkill-sections">
-        <!-- row 1 -->
-        <div class="row">
-            <!-- column 1 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 82%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML 82%</div>
-                </div>
-            </div>
-            <!-- column 2 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 75%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS 78%</div>
-                </div>
+   <div class="container" id="mySkill-sections">
+    <!-- row 1 -->
+    <div class="row">
+        <!-- column 1 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 82%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML 82%</div>
             </div>
         </div>
-        <!-- row 2 -->
-        <div class="row">
-            <!-- column 1 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 75%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT 75%</div>
-                </div>
-            </div>
-            <!-- column 2 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 65%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">REACT JS 65%</div>
-                </div>
-            </div>
-        </div>
-        <!-- ROW 3 -->
-        <div class="row">
-            <!-- column 1 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 60%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">TAILWIND CSS 60%</div>
-                </div>
-            </div>
-            <!-- column 2 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 55%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP 55%</div>
-                </div>
-            </div>
-        </div>
-        <!-- ROW 4 -->
-        <div class="row">
-            <!-- colmn 1 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 65%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MYSQL 65%</div>
-                </div>
-            </div>
-            <!-- column 2 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 40%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JQUERY 40%</div>
-                </div>
-            </div>
-        </div>
-        <!-- ROW 5 -->
-        <div class="row">
-            <!-- column 1 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 80%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">BOOTSTRAP 80%</div>
-                </div>
-            </div>
-            <!-- column 2 -->
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="progress bg-dark my-3">
-                    <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 60%;"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHOTOSHOP 60%</div>
-                </div>
+        <!-- column 2 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 75%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS 78%</div>
             </div>
         </div>
     </div>
+    <!-- row 2 -->
+    <div class="row">
+        <!-- column 1 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 75%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JAVASCRIPT 75%</div>
+            </div>
+        </div>
+        <!-- column 2 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 65%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">REACT JS 65%</div>
+            </div>
+        </div>
+    </div>
+    <!-- ROW 3 -->
+    <div class="row">
+        <!-- column 1 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 60%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">TAILWIND CSS 60%</div>
+            </div>
+        </div>
+        <!-- column 2 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 55%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP 55%</div>
+            </div>
+        </div>
+    </div>
+    <!-- ROW 4 -->
+    <div class="row">
+        <!-- colmn 1 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 65%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MYSQL 65%</div>
+            </div>
+        </div>
+        <!-- column 2 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 40%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JQUERY 40%</div>
+            </div>
+        </div>
+    </div>
+    <!-- ROW 5 -->
+    <div class="row">
+        <!-- column 1 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 80%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">BOOTSTRAP 80%</div>
+            </div>
+        </div>
+        <!-- column 2 -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="progress bg-dark my-3">
+                <div class="progress-bar bg-warning text-dark fw-bolder" role="progressbar" style="width: 60%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHOTOSHOP 60%</div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <hr>
     <!-- Experience and education container -->
     <h1 class="about-title text-center text-white fs-1 mt-3">Education<span class="text-warning fs-1"> &
