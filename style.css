@@ -3,11 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
-    overflow-x: hidden;
-    background-color: #0f0f0f;
+html,
+body {
+  overflow-x: hidden;
+  background-color: #0f0f0f;
 }
+/* navigation bar signature */
 
+.navbar-brand {
+  font-family: "Great Vibes", cursive;
+  font-weight: 800;
+  font-size: x-large;
+  /* padding-left: 50px; */
+  line-height: 10px;
+  font-style: normal;
+  rotate: calc(-10deg);
+  letter-spacing: 8px;
+  text-decoration: underline;
+  text-decoration-color:  var(--bs-warning);
+}
 /* Basic styling for the navigation bar */
 .navbar-nav .nav-link {
   color: white;
@@ -47,10 +61,7 @@ html, body {
 }
 
 /* this styling if for home content*/
-/* Basic container styling */
-/* Basic container styling */
 /* Animation for left column */
-
 
 /* Initial state for the columns */
 .col-left,
@@ -96,64 +107,88 @@ html, body {
   }
 }
 @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  /* Animation for right column */
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+
+/* Animation for right column */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* skill section css */
 /* General styles for the container */
 /* Styling for the progress bars */
 .progress {
-    height: 30px;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: #343a40; /* Dark background color for the progress bar container */
+  height: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #343a40; /* Dark background color for the progress bar container */
 }
 
 .progress-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    transition: width 2s ease-in-out;
-    opacity: 0;
-    animation: fadeIn 1s forwards; /* Fades in the progress bar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: width 2s, opacity 0.5s;
+  width: 0;
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Fades in the progress bar */
 }
 
 /* Keyframes for progress bar animation */
 @keyframes loadProgress {
-    0% {
-        width: 0;
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Keyframes for fade in effect */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add initial styles for the container elements */
+/* Add initial styles for the container elements */
+.border {
+  opacity: 0;
+  transform: translateX(-100%); /* Move elements off-screen to the left */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.border.from-right {
+  transform: translateX(100%); /* Move elements off-screen to the right */
+}
+
+/* Animation classes */
+.border.animate-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.border.animate-right {
+  opacity: 1;
+  transform: translateX(0);
 }
