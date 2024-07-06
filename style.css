@@ -192,3 +192,8 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
+
+.hover-effect:hover {
+  color: orange !important;
+  text-decoration: underline;
+}
